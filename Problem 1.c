@@ -14,15 +14,15 @@ int main(){
 		case '+':
 			result = num1 + num2;
 			printf("\nResult is: %.2f", result);
-		break;
+			break;
 		case '-':
 			result = num1 - num2;
 			printf("\nResult is: %.2f", result);
-		break;
+			break;
 		case '*':
 			result = num1 * num2;
 			printf("\nResult is: %.2f", result);
-		break;
+			break;
 		case '/':
 			if (num2 == 0){
 				printf("Cannot divide by 0");
@@ -31,9 +31,10 @@ int main(){
 				result = num1 / num2;
 				printf("\nResult is: %.2f", result);
 			}
-		break;
+			break;
 		default:
 			printf("Enter A Valid Operator");
+			break;
 	}	
 	return 0;
 }

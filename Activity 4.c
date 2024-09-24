@@ -18,37 +18,32 @@
 		scanf("%f", &project);
 		
 		finalGrade = (quiz * 0.20)+ (midterm * 0.30)+ (finals * 0.40)+ (project * 0.10);
-		
+		printf("\n================================");	
 		if(finalGrade >= 90){
 			letterGrade = 'A';
-			printf("\n=======================");
 			printf("\nGood Job!");
 		}
 		else if(finalGrade >= 80 && finalGrade <= 89){
 			letterGrade = 'B';
-			printf("\n=======================");
 			printf("\nGood Enough");
 		}
 		else if(finalGrade >= 70 && finalGrade <= 79){
 			letterGrade = 'C';
-			printf("\n=======================");
 			printf("\nAverage");
 		}
 		else if(finalGrade >= 60 && finalGrade <= 69){
 			letterGrade = 'D';
-			printf("\n=======================");
 			printf("\nPassed");
 		}
 		else{
 			letterGrade = 'F';
-			printf("\n=======================");
 			printf("\nBetter Luck Next Time");
 		}	     	   
 
-		printf("\n|Student Name: %s %s <3", firstName, lastName);
-		printf("\n|Final grade is %.2f <3", finalGrade);
-		printf("\n|The grade is %c :O", letterGrade);
-		printf("\n=======================");	
+		printf("\n|Student Name: %s %s", firstName, lastName);
+		printf("\n|Final grade is %.2f", finalGrade);
+		printf("\n|The grade is %c", letterGrade);
+		printf("\n================================");	
 	return 0;	 
 }
 

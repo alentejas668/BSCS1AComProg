@@ -12,30 +12,29 @@ int main(){
 
 	switch (operator){
 		case '+':
-		 result = num1 + num2;
-		 printf("\nResult is: %.2f", result);
-		 break;
+			result = num1 + num2;
+			printf("\nResult is: %.2f", result);
+		break;
 		case '-':
-		 result = num1 - num2;
-		 printf("\nResult is: %.2f", result);
-		 break;
+			result = num1 - num2;
+			printf("\nResult is: %.2f", result);
+		break;
 		case '*':
-		 result = num1 * num2;
-		 printf("\nResult is: %.2f", result);
-		 break;
+			result = num1 * num2;
+			printf("\nResult is: %.2f", result);
+		break;
 		case '/':
-		 if (num2 == 0){
-		 	printf("Cannot divide by 0");
-		 }
-		 else{
-		 result = num1 / num2;
-		 printf("\nResult is: %.2f", result);
-		 break;
-		 }
-	}
-	
-	
-	
+			if (num2 == 0){
+				printf("Cannot divide by 0");
+			}
+			else{
+				result = num1 / num2;
+				printf("\nResult is: %.2f", result);
+			}
+		break;
+		default:
+			printf("Enter A Valid Operator");
+	}	
 	return 0;
 }
 
